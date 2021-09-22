@@ -378,6 +378,10 @@
                 if (err) {
                     return callback(err);
                 }
+                // Fix the issue when ldapid is not existed yet
+                if (!uid) {
+                    return callback(null, {uid:0});
+                }
                 user.getUserData(uid, (err, data) => {
                     if (err) {
                         return callback(err);
