@@ -37,8 +37,8 @@
     "compatibility": "~1.16.0 || ~1.17.0"
   },
   "dependencies": {
-    "async": "^3.2.0",
-    "ldapjs": "~2.2.4",
+    "async": "^3.2.4",
+    "ldapjs": "~2.3.3",
     "ldap-filter": "0.3.3"
   }
 }

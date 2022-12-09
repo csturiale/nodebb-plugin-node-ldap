@@ -141,7 +141,7 @@
             const client = ldapjs.createClient({
                 url: master_config.server + ':' + master_config.port,
                 tlsOptions: tlsOptions,
-                timeout: 2000
+                timeout: 300000
             });
             client.on('error', error => callback(error));
 
@@ -378,6 +378,11 @@
                 if (err) {
                     return callback(err);
                 }
+
+                if (!uid) {
+                    return callback(null, {uid:0});
+                }
+
                 user.getUserData(uid, (err, data) => {
                     if (err) {
                         return callback(err);
