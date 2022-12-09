@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-node-ldap-new",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "NodeBB LDAP Login",
   "main": "index.js",
   "repository": {
