@@ -39,7 +39,6 @@
   "dependencies": {
     "async": "^3.2.4",
     "ldap-filter": "0.3.3",
-    "ldapjs": "~2.3.3",
-    "nodebb-plugin-node-ldap-new": "^1.0.3"
+    "ldapjs": "~2.3.3"
   }
 }
